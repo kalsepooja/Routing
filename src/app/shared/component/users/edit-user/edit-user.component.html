@@ -1,1 +1,17 @@
-<p>edit-user works!</p>
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="uerInfoForm">
+                    <div class="form-group">
+                        <label for="username">UserName</label>
+                        <input type="text" formControlName="userusername" id="" class="form-control">
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-primary">Update User</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

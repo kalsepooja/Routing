@@ -1,3 +1,14 @@
-<p>products works!</p>
+<div class="row">
+    <div class="col-md-4">
+        <ul class="list-group" *ngIf="productArr; else noProduct">
+            <li class="list-group-item" *ngFor="let product of productArr">
+                {{product.pName}}
+            </li>
+        </ul>
+        <ng-template #noProduct>
+            <p class="alert alert-info">no product is available !!!</p>
+        </ng-template>
+    </div>
+</div>
 
 
